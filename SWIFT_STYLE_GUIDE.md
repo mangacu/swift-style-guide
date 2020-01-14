@@ -24,7 +24,6 @@ For guidance on general design principals, see instead `GUIDELINES.md.`
 - [Example](#example)
 
 ### Philosophy
------
 - Refer to the [Language Guide](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/) where this guide is silent.
 - Use common sense.
 - When you can't have both, prefer readability over conciseness.
@@ -32,7 +31,6 @@ For guidance on general design principals, see instead `GUIDELINES.md.`
 - Follow conventions established in the file(s) you're working on.
 
 ### Spacing
------
 - Vertical whitespace is good.
 - Use four spaces for indentation, not tabs.
 - Use a space between binary operators and their operands.
