@@ -40,7 +40,7 @@ For guidance on general design principals, see instead `GUIDELINES.md.`
 - Use a space to separate braces from the body of a closure on the same line.
 - Use a space around `->` in a closure or method declaration.
 
-##### Bad:
+#### Bad:
 ```
 func sayHello(personName:String)->String {
     let greeting="Hello, "+personName+"!"
@@ -48,7 +48,7 @@ func sayHello(personName:String)->String {
 }
 ```
 
-##### Good:
+#### Good:
 ```
 func sayHello(personName: String) -> String {
     let greeting = "Hello, " + personName + "!"
@@ -108,7 +108,7 @@ UIView.animateWithDuration(1.0,
 - Include one blank line between each property and method within a type.
 - Do not put blank lines at the beginning or end of a scope (closure, class and function definitions)
 
-##### Bad:
+#### Bad:
 
 ```
 class Person {
@@ -123,7 +123,7 @@ class Person {
 }
 ```
 
-##### Good:
+#### Good:
 
 ```
 class Person {
@@ -146,7 +146,7 @@ class Person {
 let  = true
 ```
 
-##### Bad:
+#### Bad:
 
 ```
 enum coffeeFlavor {
@@ -155,7 +155,7 @@ enum coffeeFlavor {
 }
 ```
 
-##### Good:
+#### Good:
 
 ```
 enum CoffeeFlavor {
@@ -168,7 +168,7 @@ enum CoffeeFlavor {
 ### Braces
 - Braces open on the same line as a statement and close on a new line.
 
-##### Bad:
+#### Bad:
 
 ```
 if coffees.isEmpty
@@ -178,7 +178,7 @@ if coffees.isEmpty
 else { // Something }
 ```
 
-##### Good:
+#### Good:
 
 ```
 if coffees.isEmpty {
@@ -197,13 +197,13 @@ if coffees.isEmpty {
 - Omit type annotations when the type can be inferred.
 - Prefer `let` constants over `var` variables unless mutability is absolutely necessary.
 
-##### Bad:
+#### Bad:
 
 ```
 var x: Double = 0.0, y: Double = 0.0, z: Double = 0.0
 ```
 
-##### Good:
+#### Good:
 
 ```
 let x = 0.0
@@ -218,7 +218,7 @@ let z = 0.0
 - Omit parentheses around parameter and return types.
 - Declare closures with no return type as `-> Void` instead of `-> ()`
 
-##### Bad:
+#### Bad:
 
 ```
 UIView.animateWithDuration(1.0, animations: { () -> Void in
@@ -226,7 +226,7 @@ UIView.animateWithDuration(1.0, animations: { () -> Void in
 })
 ```
 
-##### Good:
+#### Good:
 
 ```
 UIView.animateWithDuration(1.0) {
