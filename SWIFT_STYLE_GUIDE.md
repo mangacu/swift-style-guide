@@ -38,7 +38,7 @@ For guidance on general design principals, see instead `GUIDELINES.md.`
 - Use a space after a comma, colon or semicolon.
 - Omit spaces inside brackets.
 - Use a space to separate braces from the body of a closure on the same line.
-- Use a space around -> in a closure or method declaration.
+- Use a space around `->` in a closure or method declaration.
 
 ##### Bad:
 ```
