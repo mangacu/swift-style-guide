@@ -23,14 +23,14 @@ For guidance on general design principals, see instead `GUIDELINES.md.`
 - [Documentation](#documentation)
 - [Example](#example)
 
-### Philosophy
+## Philosophy
 - Refer to the [Language Guide](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/) where this guide is silent.
 - Use common sense.
 - When you can't have both, prefer readability over conciseness.
 - Be consistent.
 - Follow conventions established in the file(s) you're working on.
 
-### Spacing
+## Spacing
 - Vertical whitespace is good.
 - Use four spaces for indentation, not tabs.
 - Use a space between binary operators and their operands.
@@ -77,7 +77,7 @@ let numbers = [
 ]
 ```
 
-#### Line breaks
+### Line breaks
 - Lines are limited to 100 characters except in unusual circumstances. Unusual circumstances are intentionally vague, so use common sense, and be consistent.
 - Split long method calls into separate lines by placing named parameters on a new line and indenting by one level.
 ```
@@ -103,7 +103,7 @@ UIView.animateWithDuration(1.0,
     })
 ```
 
-#### Blank lines
+### Blank lines
 - Include one blank line between each module-level type or function.
 - Include one blank line between each property and method within a type.
 - Do not put blank lines at the beginning or end of a scope (closure, class and function definitions)
@@ -135,8 +135,7 @@ class Person {
 }
 ```
 
-### Naming
-------
+## Naming
 - Use upper camel case to name types (classes, structures, and enumerations).
 - Use lower camel case to name constants, variables, and properties.
 - Prefer long descriptive names over terse abbreviations.
@@ -165,9 +164,8 @@ enum CoffeeFlavor {
 }
 ```
 
-### Syntax
------
-#### Braces
+## Syntax
+### Braces
 - Braces open on the same line as a statement and close on a new line.
 
 ##### Bad:
@@ -190,12 +188,11 @@ if coffees.isEmpty {
 }
 ```
 
-#### Semicolons
+### Semicolons
 - Omit semicolons at the end of statements.
 - Avoid writing multiple statements on a single line.
 
-### Constants and Variables
-------
+## Constants and Variables
 - Declare constants and variables on their own lines.
 - Omit type annotations when the type can be inferred.
 - Prefer `let` constants over `var` variables unless mutability is absolutely necessary.
@@ -214,8 +211,7 @@ let y = 0.0
 let z = 0.0
 ```
 
-### Closures
------
+## Closures
 - Prefer trailing closure syntax when there is a final, lone closure parameter.
 - Omit parameter type when it can be inferred.
 - Omit return type when it can be inferred.
@@ -238,18 +234,16 @@ UIView.animateWithDuration(1.0) {
 }
 ```
 
-### Optionals
-------
+## Optionals
 - Try to avoid optional types unless `nil` is an acceptable value for that type. Describe what `nil` means in comments.
 - Try to avoid implicitly unwrapped optionals whenever possible. Notable exceptions include IBOutlets.
 - Try to avoid force unwrapping optionals with `!`. Prefer `if let`, `map`, `flatMap`, `?`, or `??` to safely unwrap optionals.
 
-### Classes and structs
-------
+## Classes and structs
 - When choosing between classes and structs, follow these [guidelines](https://docs.swift.org/swift-book/LanguageGuide/ClassesAndStructures.html#//apple_ref/doc/uid/TP40014097-CH13-ID92).
 - Mark classes final unless subclassing is necessary.
 
-#### Organization
+### Organization
 - Sort imports alphabetically.
 - Sort sections inside the implementation in the following order:
     1. Type properties
@@ -265,20 +259,18 @@ UIView.animateWithDuration(1.0) {
 - Use `// MARK: -` to separate each type, or extension of a type, within a file.
 - Overridden methods should go at the start of the corresponding section. For example, `override func viewDidLoad() { /** ... */ }` should go in between the initializers and the instance methods in a class.
 
-#### Protocol Conformance
+### Protocol Conformance
 - Separate each protocol conformance into its own extension in alphabetical order after the main type declaration.
 
-#### Use of self
+### Use of self
 - Omit self, except when required in closures or when an initializer parameter matches the name of a property.
 
-### Documentation
-------
+## Documentation
 - Provide documentation for classes, structs, properties, functions and methods. Items should have documentation if their purpose and use are not obvious. Most items are not obvious in purpose, and so require documentation.
 - Use `- parameter <parameter name>:` and `- returns:` to describe method usage.
 - Use inline comments to explain the reasons why the code does what it does. What the code does should also be made clear through organization and naming.
 
-### Example
-------
+## Example
 The following file demonstrates the guidelines put forth in this document.
 
 ```
